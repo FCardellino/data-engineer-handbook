@@ -1,0 +1,12 @@
+ustom_postgres:
+  outputs:
+    dev:
+      dbname: destination_db
+      host: host.docker.internal
+      pass: secret
+      port: 5435
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
